@@ -6,6 +6,15 @@ function crearGato (nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+  gato = {
+    nombre: nombre,
+    edad: edad,
+    meow: function(){
+      maullido = "Meow!"
+      return maullido
+    }
+  }
+  return gato
 }
 
 function agregarPropiedad (objeto, property) {
@@ -41,6 +50,12 @@ function nuevoUsuario (nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
 
+  usuario = {
+    nombre: nombre,
+    email:email,
+    password:password
+  }
+  return usuario
 }
 
 function tieneEmail (usuario) {
